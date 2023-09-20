@@ -1,0 +1,276 @@
+/* styles.css */
+
+/* Header */
+
+body {
+    font-size: 20px; /* Adjust the font size to your preference */
+}
+h1, h2, h3 {
+    font-size: 50px; /* Adjust the font size to your preference */
+}
+
+p {
+    font-size: 30px; /* Adjust the font size to your preference */
+}
+
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s; /* Add smooth color transition on hover */
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: #FF5722;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #27005D;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    overflow: hidden; /* Hide overflow text */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: typing 3s steps(40, end) 1s forwards; /* Animation settings */
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 2rem; /* Decrease the font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h2 {
+        font-size: 1.5rem; /* Further decrease the font size for very small screens */
+    }
+}
+/* Define the animation keyframes */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* About Us */
+#about {
+    background-color: #9400FF;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+/* Services */
+#services {
+    background-color: #AED2FF;
+    color: rgb(6, 6, 6);
+    text-align: center;
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.service {
+    margin: 20px; /* Adjust margin as needed for spacing */
+    padding: 20px;
+    background-color: #27005d40;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    display: inline-block; /* Center-align service boxes */
+}
+
+/* Scale up the service box on hover */
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Clients */
+#clients {
+    background-color: #BC7AF9;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+/* Contact Us */
+#contact {
+    background-color: #F44336;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Add smooth background color transition on hover */
+}
+
+/* Change button background color on hover */
+.btn:hover {
+    background-color: #FF5722; /* Change to your desired color */
+}
+
+/* Add styling for the chatbot image */
+.chatbot-image {
+    width: 180px;
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image horizontally and add spacing */
+    display: block; /* Remove float */
+    transition: transform 0.3s; /* Add a transform effect on hover */
+}
+
+/* Scale up the chatbot image on hover */
+.chatbot-image:hover {
+    transform: scale(1.1);
+}
+
+.service img {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#hero p {
+    font-size: 1.8rem; /* Set the desired font size */
+}
+
+/* Add styling for the founder section */
+.founder {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the founder's photo */
+.founder img {
+    max-width: 100%; /* Set the maximum width to 100% to make it responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Style the "Founder" headline */
+.founder h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Style the LinkedIn link */
+.founder a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Add smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.founder a:hover {
+    color: #FF5722;
+}
+
+/* Style the "Order Your Chatbot" button */
+.service a.btn {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Add smooth background color transition on hover */
+}
+
+/* Change button background color on hover */
+.service a.btn:hover {
+    background-color: #07eaff;
+}
+
+/* Style for the WhatsApp button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp green */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Makes it circular */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style for the WhatsApp icon inside the button */
+.whatsapp-button img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    margin-top: 10px; /* Center vertically */
+}
+
+/* Floating Scroll Button */
+.scroll-button-container {
+    position: fixed;
+    bottom: 100px; /* Adjust the distance from the bottom as needed */
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.scroll-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
